@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/mma",
     output: "export",
     productionBrowserSourceMaps: true,
 };
+
+/* module.exports = nextConfig*/
 
 export default nextConfig;
