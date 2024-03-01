@@ -1,0 +1,205 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+  background-color: white;
+  align-items: center;
+  padding: 24px;
+  margin: 24px;
+  font-size: 14px;
+  position: relative;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 14px;
+}
+
+.list li {
+  margin: 0;
+  padding: 0;
+}
+
+.list > li > a {
+  color: #14151f;
+  font-weight: 600;
+}
+
+.navigate {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navigate > button {
+  font-family: inherit;
+  border-radius: 16px;
+  padding: 8px 16px;
+  background-color: #3048ea;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  height: 410px;
+  background-image: url("../../public/backgrounds/ourTeam.png");
+  background-size: 100% 750px;
+  background-repeat: no-repeat;
+}
+
+.ad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 48px);
+  background-color: #8230ea;
+  padding: 24px;
+}
+
+.ad p {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.ad button {
+  font-family: inherit;
+  color: #8230ea;
+  border: none;
+  background-color: white;
+  padding: 16px 32px;
+  border-radius: 42px;
+}
+
+.footerNav {
+  width: calc(100% - 48px);
+  margin: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  border-top: 1px solid #14151f1a;
+  width: calc(100% - 48px);
+  margin: 24px;
+  margin-top: 0;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #14151f66;
+  font-size: 14px;
+}
+
+.footerContent {
+  vertical-align: bottom;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0;
+}
+
+.motiondiv {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1.25rem;
+  padding-top: 0;
+  border-bottom-width: 1px;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.motiondiv button {
+  width: 100%;
+  font-family: inherit;
+  border-radius: 16px;
+  padding: 10px 16px;
+  background-color: #3048ea;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.burgerList {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.motionli {
+  border-radius: 0.75rem;
+  width: 100%;
+  padding: 0.08rem;
+}
+
+.motionli li {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 14px;
+}
+
+.motionli a {
+  color: #14151f;
+  font-weight: 600;
+}
+
+.hamburgerLink {
+  display: flex;
+  padding: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.75rem;
+  width: 100%;
+}
+
+.hamburgerTitle {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.burderMenu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .header .navigate {
+    display: none;
+  }
+
+  .burderMenu {
+    display: block;
+  }
+
+  .footerNav {
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerNav .list {
+    flex-direction: row;
+    font-size: 12px;
+    gap: 4px;
+  }
+}
