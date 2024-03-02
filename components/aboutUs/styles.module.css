@@ -25,6 +25,8 @@
 }
 
 .card img {
+  width: 840px;
+  height: 280px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -66,13 +68,17 @@
 }
 
 .miras {
+  font-size: 44px;
   width: 150px;
-  margin-left: 10px;
+  margin: 0 !important;
+  margin-left: 10px !important;
   padding-left: 10px;
   background-color: rgb(69, 69, 255);
 }
 
 .agency {
+  font-size: 44px;
+  margin: 0 !important;
   width: 460px;
   padding-left: 10px;
   background-color: rgb(69, 69, 255);
@@ -103,10 +109,20 @@
     font-size: 12px;
     margin: 40px 0;
   }
+  .miras {
+    width: 75px;
+
+    margin-left: 10px !important;
+    font-size: 25px !important;
+  }
+  .agency {
+    width: 240px;
+    font-size: 25px !important;
+  }
   .card img {
-    bottom: -20px;
+    bottom: 0px;
     right: -40px;
     width: 380px;
-    height: 200px;
+    height: 170px;
   }
 }

@@ -79,6 +79,8 @@
 }
 
 .second img {
+  width: 180px;
+  height: 180px;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -87,10 +89,14 @@
 }
 
 .third img {
+  width: 180px;
+  height: 180px;
   animation: rotate 6s ease-in-out infinite;
 }
 
 .first img {
+  width: 420px;
+  height: 360px;
   animation: spin 6s ease-in-out infinite;
 }
 
@@ -153,7 +159,7 @@
 
   .first img {
     width: 180px;
-    height: 180px;
+    height: 160px;
     bottom: -10px;
   }
   .first h1 {

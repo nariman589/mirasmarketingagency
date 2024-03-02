@@ -4,7 +4,7 @@ import { sfPro, stolzl } from "@/app/fonts";
 
 import Image from "next/image";
 
-import picture from "public/aboutUs/picture.svg";
+import picture from "public/aboutUs/picture.png";
 
 function AboutUs() {
   return (

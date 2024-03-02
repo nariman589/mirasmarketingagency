@@ -3,9 +3,9 @@ import styles from "./styles.module.css";
 
 import Image from "next/image";
 
-import FirstBanner from "public/banners/first.svg";
-import SecondBanner from "public/banners/second.svg";
-import ThirdBanner from "public/banners/third.svg";
+import FirstBanner from "public/banners/fisrt.png";
+import SecondBanner from "public/banners/second.png";
+import ThirdBanner from "public/banners/third.png";
 import { stolzl } from "@/app/fonts";
 
 function Banners() {

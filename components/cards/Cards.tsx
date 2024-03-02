@@ -5,9 +5,9 @@ import Image from "next/image";
 
 import { stolzl } from "@/app/fonts";
 
-import first from "public/cards/first.svg";
-import second from "public/cards/second.svg";
-import third from "public/cards/third.svg";
+import first from "public/cards/first.png";
+import second from "public/cards/second.png";
+import third from "public/cards/third.png";
 
 function Cards() {
   return (
