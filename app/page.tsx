@@ -1,9 +1,9 @@
+import AboutUs from "@/components/aboutUs/AboutUs";
+import Banners from "@/components/banners/Banners";
+import Cards from "@/components/cards/Cards";
+import Projects from "@/components/projects/Projects";
+import OurTeam from "@/components/team/OurTeam";
 import styles from "./page.module.css";
-import Banners from "./blocks/banners/Banners";
-import OurTeam from "./blocks/team/OurTeam";
-import Cards from "./blocks/cards/Cards";
-import AboutUs from "./blocks/aboutUs/AboutUs";
-import Projects from "./blocks/projects/Projects";
 
 export default function Home() {
   return (

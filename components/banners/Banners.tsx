@@ -6,7 +6,7 @@ import Image from "next/image";
 import FirstBanner from "public/banners/first.svg";
 import SecondBanner from "public/banners/second.svg";
 import ThirdBanner from "public/banners/third.svg";
-import { stolzl } from "../../fonts";
+import { stolzl } from "@/app/fonts";
 
 function Banners() {
   return (
