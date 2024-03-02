@@ -29,7 +29,7 @@ function Banners() {
         <div>
           <button>Send Message</button>
         </div>
-        <Image priority src={FirstBanner} alt="first" />
+        <Image loading="lazy" src={FirstBanner} alt="first" />
       </div>
       <div className={styles.partialBlock}>
         <div className={`${styles.second} ${styles.block}`}>
@@ -40,7 +40,7 @@ function Banners() {
           <div>
             <button>Send Message</button>
           </div>
-          <Image priority src={SecondBanner} alt="first" />
+          <Image loading="lazy" src={SecondBanner} alt="first" />
         </div>
         <div className={`${styles.third} ${styles.block}`}>
           <div>
@@ -50,7 +50,7 @@ function Banners() {
           <div>
             <button>Send Message</button>
           </div>
-          <Image priority src={ThirdBanner} alt="first" />
+          <Image loading="lazy" src={ThirdBanner} alt="first" />
         </div>
       </div>
     </section>

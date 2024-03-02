@@ -29,7 +29,7 @@ function Header() {
   return (
     <header className={`${sfPro.className} ${styles.header}`}>
       <a href="/">
-        <Image priority src={logo} alt="logo" />
+        <Image loading="lazy" src={logo} alt="logo" />
       </a>
       <div className={styles.navigate}>
         <ul className={styles.list}>

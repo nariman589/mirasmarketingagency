@@ -47,17 +47,17 @@ function OurTeam() {
           </div>
           <div className={styles.buttons}>
             <button>
-              <Image priority src={LeftBtn} alt="go left" />
+              <Image loading="lazy" src={LeftBtn} alt="go left" />
             </button>
             <button>
-              <Image priority src={RightBtn} alt="go right" />
+              <Image loading="lazy" src={RightBtn} alt="go right" />
             </button>
           </div>
         </div>
         <div className={styles.main}>
           {team.map((member, index) => (
             <div key={index} className={styles.member}>
-              <Image priority src={member.pic} alt={member.name} />
+              <Image loading="lazy" src={member.pic} alt={member.name} />
               <p className={`${stolzl.className} ${styles.name}`}>
                 {member.name}
               </p>

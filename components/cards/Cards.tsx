@@ -20,7 +20,7 @@ function Cards() {
         <div>
           <button>I want a web site</button>
         </div>
-        <Image priority src={first} alt="first" />
+        <Image loading="lazy" src={first} alt="first" />
       </div>
       <div className={`${styles.second} ${styles.block}`}>
         <div>
@@ -32,7 +32,7 @@ function Cards() {
         <div>
           <button>I want a logo</button>
         </div>
-        <Image priority src={second} alt="first" />
+        <Image loading="lazy" src={second} alt="first" />
       </div>
       <div className={`${styles.third} ${styles.block}`}>
         <div>
@@ -42,7 +42,7 @@ function Cards() {
         <div>
           <button>I want a web site</button>
         </div>
-        <Image priority src={third} alt="first" />
+        <Image loading="lazy" src={third} alt="first" />
       </div>
     </section>
   );

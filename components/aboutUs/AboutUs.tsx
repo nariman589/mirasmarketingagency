@@ -49,7 +49,7 @@ function AboutUs() {
             readable content of a pag
           </p>
         </div>
-        <Image priority src={picture} alt="" />
+        <Image loading="lazy" src={picture} alt="" />
       </div>
     </section>
   );

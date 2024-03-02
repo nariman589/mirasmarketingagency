@@ -16,7 +16,7 @@ function Footer() {
       <div className={styles.footerContent}>
         <div className={`${styles.footerNav} ${sfPro.className}`}>
           <Link href="/">
-            <Image priority src={logo} alt="logo" />
+            <Image loading="lazy" src={logo} alt="logo" />
           </Link>
           <ul className={styles.list}>
             <li>
