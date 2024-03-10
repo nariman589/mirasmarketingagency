@@ -2,10 +2,11 @@
   width: calc(100% - 48px);
   min-height: 400px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   color: white;
+  justify-content: center;
   margin: 24px;
-  gap: 14px;
+  gap: 28px;
 }
 
 .block {
@@ -30,6 +31,7 @@
 }
 
 .block button {
+  max-width: 180px;
   font-family: inherit;
   border: 1px solid white;
   border-radius: 42px;

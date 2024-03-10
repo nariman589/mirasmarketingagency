@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
+import { AnimatedCursor } from "@/clientComponents/CustomCursor";
 
 export const metadata: Metadata = {
   title: "MMA",
@@ -14,7 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      style={{
+        scrollBehavior: "smooth",
+      }}
+    >
       <body
         style={{
           backgroundColor: "#F5F6F7",
@@ -24,6 +30,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <AnimatedCursor />
       </body>
     </html>
   );

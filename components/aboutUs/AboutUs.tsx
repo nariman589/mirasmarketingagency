@@ -22,10 +22,7 @@ function AboutUs() {
             >
               Marketing Agency
             </p>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+            <p>Full services advertising agency.</p>
           </div>
           <div>
             <button>Send Request</button>
@@ -33,20 +30,19 @@ function AboutUs() {
         </div>
         <div className={styles.right}>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only
+            We Offer to our clients unique and effective solutions for business
+            development in social media. We develop and implement creative
+            concepts for advertising campaigns, build successful brands,
+            identity, photo and video content, as well as unique digital
+            solutions.
           </p>
           <p>
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum. Why do we use it? It is
-            a long established fact that a reader will be distracted by the
-            readable content of a pag
+            We employ a systematic approach at the stage of strategy and
+            planning, perfectionism at the stage of implementation, and take a
+            collaborative approach with your client's team. In each project we
+            see the will and the dream of its people, appreciate the efficiency
+            of cooperation and human relations, and therefore we always keep our
+            promises.
           </p>
         </div>
         <Image loading="lazy" src={picture} alt="" />

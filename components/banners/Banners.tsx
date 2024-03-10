@@ -13,45 +13,35 @@ function Banners() {
     <section className={`${styles.container} ${stolzl.className}`}>
       <div className={`${styles.first} ${styles.block}`}>
         <div>
-          <h1>Miras Marketing Agency</h1>
+          <h1>Grow your digital marketing revenue with us</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum
+            Get ready to drive revenue — just request a proposal below to
+            receive a digital marketing proposal that includes a customized
+            strategy, pricing, and flight plan!
           </p>
         </div>
         <div>
-          <button>Send Message</button>
+          <button>Get a Proposal</button>
         </div>
         <Image loading="lazy" src={FirstBanner} alt="first" />
       </div>
-      <div className={styles.partialBlock}>
-        <div className={`${styles.second} ${styles.block}`}>
-          <div>
-            <h2>Website creation service</h2>
-          </div>
 
-          <div>
-            <button>Send Message</button>
-          </div>
-          <Image loading="lazy" src={SecondBanner} alt="first" />
+      <div className={`${styles.second} ${styles.block}`}>
+        <div>
+          <h2>What we do</h2>
+          <ul>
+            <li>Development of SMM strategies</li>
+            <li>Content creation</li>
+            <li>Targeted advertising</li>
+            <li>Photo and video production</li>
+            <li>WEB design and SEO</li>
+          </ul>
         </div>
-        <div className={`${styles.third} ${styles.block}`}>
-          <div>
-            <h2>Logo and brand book development service</h2>
-          </div>
 
-          <div>
-            <button>Send Message</button>
-          </div>
-          <Image loading="lazy" src={ThirdBanner} alt="first" />
+        <div>
+          <button>Get a Proposal</button>
         </div>
+        <Image loading="lazy" src={SecondBanner} alt="first" />
       </div>
     </section>
   );

@@ -51,23 +51,31 @@
   font-size: 48px;
   font-weight: 400;
   text-wrap: wrap;
-  max-width: 350px;
+  max-width: 850px;
   margin: 0;
 }
 
 .partialBlock {
-  display: grid;
+  height: 100%;
+  /* display: grid;
   grid-template-rows: 1fr 1fr;
+  gap: 14px; */
+}
+
+.second ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
   gap: 14px;
 }
 
-.partialBlock button {
+.second button {
   font-family: inherit;
   font-size: 14px;
   padding: 10px 20px;
 }
 
-.partialBlock h2 {
+.second h2 {
   font-size: 24px;
   font-weight: 400;
   text-wrap: wrap;
@@ -163,7 +171,7 @@
     bottom: -10px;
   }
   .first h1 {
-    font-size: 36px !important;
+    font-size: 28px !important;
   }
   .first p {
     max-height: 220px;
@@ -171,6 +179,10 @@
   }
   .block p {
     font-size: 12px;
+  }
+
+  .block {
+    min-height: 360px;
   }
   .second {
     min-height: 220px;
