@@ -1,16 +1,24 @@
 .container {
   width: calc(100% - 48px);
   min-height: 400px;
-  display: flex;
-  flex-wrap: wrap;
   color: white;
-  justify-content: center;
   margin: 24px;
-  gap: 28px;
+}
+
+.cardsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.cardsBelow {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
 
 .block {
-  width: 360px;
   height: 301px;
   position: relative;
   padding: 24px;
@@ -62,6 +70,18 @@
 }
 
 @media (max-width: 1024px) {
+  .cardsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .cardsBelow {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
   .container img {
     right: -10px;
   }
@@ -76,8 +96,11 @@
     max-width: 280px;
   }
 
+  .block p {
+    font-size: 13px;
+  }
   .title {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .block button {

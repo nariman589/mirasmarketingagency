@@ -6,7 +6,14 @@ import Image from "next/image";
 import FirstBanner from "public/banners/fisrt.png";
 import SecondBanner from "public/banners/second.png";
 import ThirdBanner from "public/banners/third.png";
-import { stolzl } from "@/app/fonts";
+
+import puzzle from "public/icons/puzzle.svg";
+import pencil from "public/icons/pencil.svg";
+import pin from "public/icons/pin.svg";
+import camera from "public/icons/camera.svg";
+import gear from "public/icons/gear.svg";
+
+import { sfPro, stolzl } from "@/app/fonts";
 
 function Banners() {
   return (
@@ -26,22 +33,32 @@ function Banners() {
         <Image loading="lazy" src={FirstBanner} alt="first" />
       </div>
 
-      <div className={`${styles.second} ${styles.block}`}>
+      <div className={`${styles.second} ${styles.block} ${sfPro.className}`}>
         <div>
           <h2>What we do</h2>
           <ul>
-            <li>Development of SMM strategies</li>
-            <li>Content creation</li>
-            <li>Targeted advertising</li>
-            <li>Photo and video production</li>
-            <li>WEB design and SEO</li>
+            <li>
+              <Image src={puzzle} alt="" />
+              <p>Development of SMM strategies</p>
+            </li>
+            <li>
+              <Image src={pencil} alt="" />
+              <p>Content creation</p>
+            </li>
+            <li>
+              <Image src={pin} alt="" />
+              <p>Targeted advertising</p>
+            </li>
+            <li>
+              <Image src={camera} alt="" />
+              <p>Photo and video production</p>
+            </li>
+            <li>
+              <Image src={gear} alt="" />
+              <p>WEB design and SEO</p>
+            </li>
           </ul>
         </div>
-
-        <div>
-          <button>Get a Proposal</button>
-        </div>
-        <Image loading="lazy" src={SecondBanner} alt="first" />
       </div>
     </section>
   );

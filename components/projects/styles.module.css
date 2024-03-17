@@ -1,9 +1,13 @@
 .container {
   width: calc(100% - 48px);
+
+  margin: 24px;
+}
+
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
-  margin: 24px;
 }
 
 .card {
@@ -20,7 +24,7 @@
   font-size: 20px;
 }
 
-.buttons button {
+.buttons a {
   font-family: inherit;
   font-size: 15px;
   font-weight: 600;
@@ -44,10 +48,14 @@
 }
 
 .image {
-  width: 100%;
-  height: 100%;
   border-radius: 42px;
   background-color: white;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 1024px) {
@@ -55,6 +63,10 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
   }
   .card {
     display: flex;

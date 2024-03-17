@@ -8,16 +8,20 @@ import BurgerMenu from "./BurgerMenu";
 
 export const routes = [
   {
-    title: "Our Team",
-    href: "#team",
+    title: "Home",
+    href: "#home",
+  },
+  {
+    title: "About Us",
+    href: "#abUs",
   },
   {
     title: "What We Do",
     href: "#wedo",
   },
   {
-    title: "About Us",
-    href: "#abUs",
+    title: "How We Work",
+    href: "#howWeWork",
   },
   {
     title: "Our Projects",
@@ -27,7 +31,7 @@ export const routes = [
 
 function Header() {
   return (
-    <header className={`${sfPro.className} ${styles.header}`}>
+    <header className={`${sfPro.className} ${styles.header}`} id="home">
       <a href="/">
         <Image loading="lazy" src={logo} alt="logo" />
       </a>
