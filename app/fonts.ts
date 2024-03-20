@@ -18,6 +18,10 @@ export const stolzl = localFont({
   src: [
     {
       path: "./fonts/stolzl_regular.otf",
+      weight: "500",
+    },
+    {
+      path: "./fonts/stolzl_light.otf",
       weight: "400",
     },
   ],

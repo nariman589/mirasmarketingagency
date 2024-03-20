@@ -65,8 +65,10 @@ function Cards() {
             style={{ backgroundColor: card.color }}
             className={styles.block}
           >
-            <p className={styles.title}>{card.title}</p>
-            <p>{card.description}</p>
+            <div>
+              <p className={styles.title}>{card.title}</p>
+              <p>{card.description}</p>
+            </div>
             <button>{card.button}</button>
             <Image loading="lazy" src={card.img || first} alt="first" />
           </div>
@@ -79,8 +81,10 @@ function Cards() {
             style={{ backgroundColor: card.color }}
             className={styles.block}
           >
-            <p className={styles.title}>{card.title}</p>
-            <p>{card.description}</p>
+            <div>
+              <p className={styles.title}>{card.title}</p>
+              <p>{card.description}</p>
+            </div>
             <button>{card.button}</button>
             <Image loading="lazy" src={card.img || first} alt="first" />
           </div>

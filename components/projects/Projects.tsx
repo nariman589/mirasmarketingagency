@@ -56,7 +56,7 @@ function Projects() {
               </div>
             </div>
             <div className={styles.image}>
-              <Image src={card.img} alt="" />
+              <Image src={card.img || ""} alt="" />
             </div>
           </div>
         ))}
