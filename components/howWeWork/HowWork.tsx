@@ -51,31 +51,26 @@ function HowWork() {
   ];
   return (
     <section className={styles.section} id="howWeWork">
-      <Title
-        title="How We
-Work"
-      />
       <div className={styles.wrapper}>
+        <div
+          className={styles.container}
+          style={{ backgroundColor: "white", display: "flex" }}
+        >
+          <p className={`${styles.mainTitle} ${stolzl.className}`}>
+            {"How we work"}
+          </p>
+        </div>
         {arr.map((item, index) => (
           <div
-            className={styles.indent}
-            style={{
-              display: "grid",
-              gridTemplateColumns: `${0.17 * index}fr 1fr`,
-            }}
+            className={styles.container}
+            style={{ backgroundColor: item.color }}
           >
-            <div></div>
-            <div
-              className={styles.container}
-              style={{ backgroundColor: item.color }}
-            >
-              <p className={`${styles.title} ${stolzl.className}`}>
-                {item.title}
-              </p>
-              <p className={`${styles.description} ${sfPro.className}`}>
-                {item.description}
-              </p>
-            </div>
+            <p className={`${styles.title} ${stolzl.className}`}>
+              {item.title}
+            </p>
+            <p className={`${styles.description} ${sfPro.className}`}>
+              {item.description}
+            </p>
           </div>
         ))}
       </div>

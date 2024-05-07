@@ -30,7 +30,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <AnimatedCursor />
+        {/* <AnimatedCursor /> */}
       </body>
     </html>
   );
