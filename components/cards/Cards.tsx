@@ -11,6 +11,7 @@ import third from "public/cards/third.png";
 import fourth from "public/banners/second.png";
 import fifth from "public/banners/third.png";
 import Title from "../title/Title";
+import Link from "next/link";
 
 function Cards() {
   const cards = [
@@ -69,7 +70,7 @@ function Cards() {
               <p className={styles.title}>{card.title}</p>
               <p>{card.description}</p>
             </div>
-            <button>{card.button}</button>
+            <Link href="?modal=true">{card.button}</Link>
             <Image loading="lazy" src={card.img || first} alt="first" />
           </div>
         ))}
@@ -85,7 +86,7 @@ function Cards() {
               <p className={styles.title}>{card.title}</p>
               <p>{card.description}</p>
             </div>
-            <button>{card.button}</button>
+            <Link href="?modal=true">{card.button}</Link>
             <Image loading="lazy" src={card.img || first} alt="first" />
           </div>
         ))}

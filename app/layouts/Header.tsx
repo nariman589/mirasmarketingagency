@@ -5,6 +5,7 @@ import logo from "public/logo.svg";
 import { sfPro } from "../fonts";
 import styles from "./styles.module.css";
 import BurgerMenu from "./BurgerMenu";
+import Link from "next/link";
 
 export const routes = [
   {
@@ -43,7 +44,7 @@ function Header() {
             </li>
           ))}
         </ul>
-        <button>Send Request</button>
+        <Link href="?modal=true">Send Request</Link>
       </div>
       <BurgerMenu />
     </header>

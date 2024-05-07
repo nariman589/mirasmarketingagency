@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
 import { AnimatedCursor } from "@/clientComponents/CustomCursor";
+import Modal from "@/clientComponents/Modal";
 
 export const metadata: Metadata = {
   title: "MMA",
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Modal />
         <Footer />
         {/* <AnimatedCursor /> */}
       </body>

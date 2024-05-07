@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import picture from "public/aboutUs/picture.png";
 import Title from "../title/Title";
+import Link from "next/link";
 
 function AboutUs() {
   return (
@@ -34,7 +35,7 @@ function AboutUs() {
             </p>
           </div>
           <div>
-            <button>Send Request</button>
+            <Link href="?modal=true">Send Request</Link>
           </div>
         </div>
         <div className={styles.right}>

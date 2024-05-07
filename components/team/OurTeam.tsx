@@ -11,6 +11,7 @@ import third from "public/team/third.svg";
 import fourth from "public/team/fourth.svg";
 
 import { sfPro, stolzl } from "@/app/fonts";
+import Link from "next/link";
 
 function OurTeam() {
   const team = [
@@ -46,12 +47,12 @@ function OurTeam() {
             </p>
           </div>
           <div className={styles.buttons}>
-            <button>
+            <Link href="?modal=true">
               <Image loading="lazy" src={LeftBtn} alt="go left" />
-            </button>
-            <button>
+            </Link>
+            <Link href="?modal=true">
               <Image loading="lazy" src={RightBtn} alt="go right" />
-            </button>
+            </Link>
           </div>
         </div>
         <div className={styles.main}>

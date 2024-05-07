@@ -48,7 +48,7 @@
   justify-content: space-between;
 }
 
-.left button {
+.left a {
   font-family: inherit;
   border: none;
   background-color: white;
@@ -140,7 +140,7 @@
     padding-left: 10px;
     background-color: rgb(69, 69, 255);
   }
-  .left button {
+  .left a {
     width: 100%;
     font-size: 14px;
   }

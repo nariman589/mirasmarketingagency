@@ -12,6 +12,7 @@ import gear from "public/icons/gear.svg";
 import mirasImage from "public/banners/Miras.png";
 
 import { sfPro, stolzl } from "@/app/fonts";
+import Link from "next/link";
 
 function Banners() {
   const services = [
@@ -60,9 +61,12 @@ function Banners() {
               </div>
             ))}
           </div>
-          <button className={`${styles.button} ${stolzl.className}`}>
+          <Link
+            href="?modal=true"
+            className={`${styles.button} ${stolzl.className}`}
+          >
             Get a Proposal
-          </button>
+          </Link>
           <Image className={styles.mirasPic} src={mirasImage} alt="miras" />
         </div>
       </div>

@@ -11,7 +11,7 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={`${styles.ad} ${stolzl.className}`}>
         <p>If you have any questions, leave a request</p>
-        <button>Send request</button>
+        <Link href="?modal=true">Send request</Link>
       </div>
       <div className={styles.footerContent}>
         <div className={`${styles.footerNav} ${sfPro.className}`}>
@@ -20,16 +20,27 @@ function Footer() {
           </Link>
           <ul className={styles.list}>
             <li>
-              <a href="/">+1 (111) 111 111 11 11</a>
+              <a target="_blank" href="tel:+1 332 257 6362">
+                +1 332 257 6362
+              </a>
             </li>
             <li>
-              <a href="/">TELEGRAM</a>
+              <a target="_blank" href="https://t.me/+13322576362">
+                TELEGRAM
+              </a>
             </li>
             <li>
-              <a href="/">WHATSAPP</a>
+              <a target="_blank" href="https://wa.me/+13322576362">
+                WHATSAPP
+              </a>
             </li>
             <li>
-              <a href="/">INSTAGRAM</a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/digital_miras/"
+              >
+                INSTAGRAM
+              </a>
             </li>
           </ul>
         </div>
