@@ -4,6 +4,7 @@ import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
 import { AnimatedCursor } from "@/clientComponents/CustomCursor";
 import Modal from "@/clientComponents/Modal";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "MMA",
@@ -30,9 +31,9 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <>
+        <Suspense>
           <Modal />
-        </>
+        </Suspense>
         <Footer />
         {/* <AnimatedCursor /> */}
       </body>
