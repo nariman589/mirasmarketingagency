@@ -106,6 +106,7 @@
   }
 
   .block a {
+    align-self: start;
     font-size: 12px;
   }
 }

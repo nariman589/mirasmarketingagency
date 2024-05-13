@@ -51,7 +51,7 @@ function BurgerMenu() {
                   </motion.li>
                 ))}
               </ul>
-              <motion.link
+              <motion.a
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{
@@ -61,9 +61,10 @@ function BurgerMenu() {
                   delay: 0.1 + 5 / 10,
                 }}
                 href="?modal=true"
+                className={styles.button}
               >
                 Send Request
-              </motion.link>
+              </motion.a>
             </motion.div>
           )}
         </AnimatePresence>

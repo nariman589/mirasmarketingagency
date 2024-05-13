@@ -124,9 +124,10 @@
   border-radius: 40px;
 }
 
-.motiondiv a {
-  width: 100%;
+.button {
+  display: inline-block;
   font-family: inherit;
+  width: calc(100% - 32px);
   border-radius: 16px;
   padding: 10px 16px;
   background-color: #3048ea;
@@ -201,5 +202,9 @@
     flex-direction: row;
     font-size: 12px;
     gap: 4px;
+  }
+
+  .ad a {
+    font-size: 12px;
   }
 }
