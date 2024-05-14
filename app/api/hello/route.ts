@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import { EmailTemplate } from "@/components/emailTemplate/emailTemplate";
 
-const resend = new Resend("re_AHNAgNGG_CZJ4oXVFC76EAdaXE65Z2pSr");
+const resend = new Resend("re_goWsPrrX_LgwTARcPMMt9rVdkpvWm55Cn");
 
 export async function POST(req: Request, res: Response) {
   try {
@@ -9,7 +9,7 @@ export async function POST(req: Request, res: Response) {
 
     const data = await resend.emails.send({
       from: "MMA <onboarding@resend.dev>",
-      to: ["doctorr01@yandex.ru"],
+      to: ["mirasdee@gmail.com"],
       subject: "Order",
       react: EmailTemplate(body),
     });
